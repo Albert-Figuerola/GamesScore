@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Benvinguda</title>
+        <!--Import Google Icon Font-->
+        <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!-- Materialize Compiled and minified CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
+        <!-- css propis -->
+        <link href="owncss/biblioteca.css" rel="stylesheet">
+
+        <!-- JAVA SCRIPT -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <!-- Materialize Compiled and minified JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
+        <script src="js/eacjs.js"></script>
+
+    </head>
+    <body>
+        <nav>
+            <div class="nav-wrapper green lighten-2">
+                <a href="index.html" class="brand-logo">&nbsp;MetacriticIOC</a>
+                <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="index.html">Inici</a></li>
+                    <li><a href="joc.html">Nou Joc</a></li>                    
+                    <li><a href="user.html">Usuari</a></li>
+                </ul>
+                <ul class="side-nav" id="mobile-demo">
+                    <li><a href="index.html">Inici</a></li>
+                    <li><a href="joc.html">Nou Joc</a></li>                    
+                    <li><a href="user.html">Usuari</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="row">
+            <div class="col s12 m8 l8 grey lighten-2"><h5>Jocs</h5></div>
+            <div id="username" class="col s12 m4 l4 grey lighten-1"><h5>Puntuacions:</h5></div>            
+        </div>                
+        <div class="row">
+            <div class="col s12 m8 l8">
+                <div class="row" id="jocs">
+
+                </div>
+            </div>
+            <div class="col s12 m4 l4 ">
+                <div class="card horizontal hoverable">
+                    <div class="card-image">
+                        <img style="margin-left: 5px;" src="img/logo.png">
+                    </div>
+                    <div class="card-stacked">
+                        <div class="card-content">
+                            <p>Jocs puntuats:<span id="total-puntuacions">0</span></p>
+                            <p>Mitjana:<span id="mitjana-puntuacions">0</span></p>
+                        </div>
+                        <div class="card-action">
+                            <a href='puntuacions.html'>Veure</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
